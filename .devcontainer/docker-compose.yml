@@ -1,0 +1,11 @@
+version: '3.2'
+
+services:
+ python:
+  build: ./python
+  container_name: 'flashcards'
+  stdin_open: true
+  tty: true
+  working_dir: '/prj/work'
+  volumes:
+  - ..:/prj/work
